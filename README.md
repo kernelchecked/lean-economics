@@ -6,7 +6,12 @@ The starting area is Marxian and input-output economics — for example the Fund
 
 ## Status
 
-No economics theorems are claimed yet. The only proved file so far is a build-environment smoke test (`LeanEconomics/SmokeTest.lean`) with two elementary examples exercising the Mathlib import, `omega`, `linarith`, and an axioms audit.
+Two theorems are proved so far, both with no `sorry` and `#print axioms` showing only the standard axioms:
+
+- `LeanEconomics/ProfitRate.lean` — `profit_rate_lt_of_const_capital_lt`: with surplus value `s > 0` and variable capital `v ≥ 0` fixed, a larger constant capital gives a strictly lower profit rate `s / (c + v)`.
+- `LeanEconomics/FundamentalMarxian.lean` — `fundamental_marxian_theorem_one_sector`: in a one-commodity model (input coefficient `a` with `0 ≤ a < 1`, labor input `l > 0`, real wage `b ≥ 0`), positive surplus labor is equivalent to a positive surplus product. The file states its scope limits (one good, one technique, no prices); the multi-sector Leontief version is future work.
+
+Discussion: the project was announced on the Lean community Zulip, in the Project announcements stream — [“Formalizing Marxian economics in Lean — first results”](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Formalizing.20Marxian.20economics.20in.20Lean.20.E2.80.94.20first.20results). Feedback is welcome there.
 
 ## Building
 
