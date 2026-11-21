@@ -9,3 +9,4 @@ import LeanEconomics.SmokeTest
 import LeanEconomics.BeckerDeterrence
 import LeanEconomics.BeckerOptimalFine
 import LeanEconomics.OkishioWageThreshold
+import LeanEconomics.TwoSectorAutomationLimit
