@@ -5,11 +5,8 @@ on:
   pull_request:
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read # Read access to repository contents
-  pages: write # Write access to GitHub Pages
-  id-token: write # Write access to ID tokens
 
 jobs:
   build:
@@ -18,4 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: leanprover/lean-action@v1
-      - uses: leanprover-community/docgen-action@v1
+      # Documentation generation (leanprover-community/docgen-action) was
+      # removed 2026-11-20: the template's docgen step failed on every run
+      # because this project has no doc-gen4 setup yet (its srcUri targets
+      # failed for all dependencies and for the project itself), while the
+      # Lean build above passed. Re-add a docs step when a doc-gen4 /
+      # leanblueprint site is actually configured.
