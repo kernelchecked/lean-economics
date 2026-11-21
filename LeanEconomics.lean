@@ -8,3 +8,4 @@ import LeanEconomics.TransformationProblem
 import LeanEconomics.SmokeTest
 import LeanEconomics.BeckerDeterrence
 import LeanEconomics.BeckerOptimalFine
+import LeanEconomics.OkishioWageThreshold
