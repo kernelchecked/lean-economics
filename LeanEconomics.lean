@@ -1,5 +1,6 @@
 import LeanEconomics.Basic
 import LeanEconomics.FundamentalMarxian
+import LeanEconomics.FundamentalMarxianTwoSector
 import LeanEconomics.Okishio
 import LeanEconomics.ProfitRate
 import LeanEconomics.TransformationProblem
