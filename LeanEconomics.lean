@@ -11,3 +11,4 @@ import LeanEconomics.BeckerOptimalFine
 import LeanEconomics.OkishioWageThreshold
 import LeanEconomics.TwoSectorAutomationLimit
 import LeanEconomics.Cournot
+import LeanEconomics.ModiglianiMiller
