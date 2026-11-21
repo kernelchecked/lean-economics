@@ -6,11 +6,12 @@ The starting area is Marxian and input-output economics — for example the Fund
 
 ## Status
 
-Three theorems are proved so far, all with no `sorry` and `#print axioms` showing only the standard axioms:
+Four results are proved so far, all with no `sorry` and `#print axioms` showing only the standard axioms:
 
 - `LeanEconomics/ProfitRate.lean` — `profit_rate_lt_of_const_capital_lt`: with surplus value `s > 0` and variable capital `v ≥ 0` fixed, a larger constant capital gives a strictly lower profit rate `s / (c + v)`.
 - `LeanEconomics/FundamentalMarxian.lean` — `fundamental_marxian_theorem_one_sector`: in a one-commodity model (input coefficient `a` with `0 ≤ a < 1`, labor input `l > 0`, real wage `b ≥ 0`), positive surplus labor is equivalent to a positive surplus product. The file states its scope limits (one good, one technique, no prices); the multi-sector Leontief version is future work.
 - `LeanEconomics/Okishio.lean` — `okishio_one_sector`: Okishio's theorem in one sector — at a constant real wage, a viable (unit-cost-reducing) technical change strictly raises the equilibrium profit rate `(1 − cost) / cost`. The file states the constant-real-wage caveat plainly; the multi-sector version is future work.
+- `LeanEconomics/TransformationProblem.lean` — `bortkiewicz_both_equalities_impossible`: in Bortkiewicz's three-department scheme (total value 875, total surplus value 200), any positive prices of production satisfying the price equations and Marx's postulate (A) (total price = total value) force total profit = 175 ≠ 200, so postulate (B) (total profit = total surplus value) cannot also hold. A companion example verifies the price system plus (A) is consistent (x = 28/25, y = 14/15, z = 7/8, r = 1/4). The general n-sector characterization of when both equalities can hold is future work.
 
 Discussion: the project was announced on the Lean community Zulip, in the Project announcements stream — [“Formalizing Marxian economics in Lean — first results”](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Formalizing.20Marxian.20economics.20in.20Lean.20.E2.80.94.20first.20results). Feedback is welcome there.
 
