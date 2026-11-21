@@ -1,2 +1,3 @@
 import LeanEconomics.Basic
+import LeanEconomics.ProfitRate
 import LeanEconomics.SmokeTest
