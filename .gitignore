@@ -1,0 +1,7 @@
+/.lake
+.lake/
+build/
+*.olean
+*.ilean
+*.c
+*.o
