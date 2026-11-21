@@ -1,6 +1,7 @@
 import LeanEconomics.Basic
 import LeanEconomics.FundamentalMarxian
 import LeanEconomics.FundamentalMarxianTwoSector
+import LeanEconomics.ExploitationLimit
 import LeanEconomics.Okishio
 import LeanEconomics.ProfitRate
 import LeanEconomics.TransformationProblem
