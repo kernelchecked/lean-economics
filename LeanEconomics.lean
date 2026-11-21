@@ -10,3 +10,4 @@ import LeanEconomics.BeckerDeterrence
 import LeanEconomics.BeckerOptimalFine
 import LeanEconomics.OkishioWageThreshold
 import LeanEconomics.TwoSectorAutomationLimit
+import LeanEconomics.Cournot
