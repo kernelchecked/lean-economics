@@ -6,10 +6,11 @@ The starting area is Marxian and input-output economics — for example the Fund
 
 ## Status
 
-Two theorems are proved so far, both with no `sorry` and `#print axioms` showing only the standard axioms:
+Three theorems are proved so far, all with no `sorry` and `#print axioms` showing only the standard axioms:
 
 - `LeanEconomics/ProfitRate.lean` — `profit_rate_lt_of_const_capital_lt`: with surplus value `s > 0` and variable capital `v ≥ 0` fixed, a larger constant capital gives a strictly lower profit rate `s / (c + v)`.
 - `LeanEconomics/FundamentalMarxian.lean` — `fundamental_marxian_theorem_one_sector`: in a one-commodity model (input coefficient `a` with `0 ≤ a < 1`, labor input `l > 0`, real wage `b ≥ 0`), positive surplus labor is equivalent to a positive surplus product. The file states its scope limits (one good, one technique, no prices); the multi-sector Leontief version is future work.
+- `LeanEconomics/Okishio.lean` — `okishio_one_sector`: Okishio's theorem in one sector — at a constant real wage, a viable (unit-cost-reducing) technical change strictly raises the equilibrium profit rate `(1 − cost) / cost`. The file states the constant-real-wage caveat plainly; the multi-sector version is future work.
 
 Discussion: the project was announced on the Lean community Zulip, in the Project announcements stream — [“Formalizing Marxian economics in Lean — first results”](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Formalizing.20Marxian.20economics.20in.20Lean.20.E2.80.94.20first.20results). Feedback is welcome there.
 

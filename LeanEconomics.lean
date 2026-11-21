@@ -1,4 +1,5 @@
 import LeanEconomics.Basic
 import LeanEconomics.FundamentalMarxian
+import LeanEconomics.Okishio
 import LeanEconomics.ProfitRate
 import LeanEconomics.SmokeTest
