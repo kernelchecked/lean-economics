@@ -6,3 +6,4 @@ import LeanEconomics.Okishio
 import LeanEconomics.ProfitRate
 import LeanEconomics.TransformationProblem
 import LeanEconomics.SmokeTest
+import LeanEconomics.BeckerDeterrence
