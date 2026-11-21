@@ -6,7 +6,7 @@ The starting area is Marxian and input-output economics, and the economics of cr
 
 ## Status
 
-Seven results are proved so far, all with no `sorry` and `#print axioms` showing only the standard axioms:
+Eight results are proved so far, all with no `sorry` and `#print axioms` showing only the standard axioms:
 
 - `LeanEconomics/ProfitRate.lean` — `profit_rate_lt_of_const_capital_lt`: with surplus value `s > 0` and variable capital `v ≥ 0` fixed, a larger constant capital gives a strictly lower profit rate `s / (c + v)`.
 - `LeanEconomics/FundamentalMarxian.lean` — `fundamental_marxian_theorem_one_sector`: in a one-commodity model (input coefficient `a` with `0 ≤ a < 1`, labor input `l > 0`, real wage `b ≥ 0`), positive surplus labor is equivalent to a positive surplus product. The file states its scope limits (one good, one technique, no prices); the multi-sector Leontief version is future work.
@@ -15,6 +15,7 @@ Seven results are proved so far, all with no `sorry` and `#print axioms` showing
 - `LeanEconomics/TransformationProblem.lean` — `bortkiewicz_both_equalities_impossible`: in Bortkiewicz's three-department scheme (total value 875, total surplus value 200), any positive prices of production satisfying the price equations and Marx's postulate (A) (total price = total value) force total profit = 175 ≠ 200, so postulate (B) (total profit = total surplus value) cannot also hold. A companion example verifies the price system plus (A) is consistent (x = 28/25, y = 14/15, z = 7/8, r = 1/4). The general n-sector characterization of when both equalities can hold is future work.
 - `LeanEconomics/ExploitationLimit.lean` — `exploitation_rate_tendsto_atTop` and `surplus_labor_tendsto_zero`: the automation limit in the one-sector model — as the labor input per unit `l → 0⁺` with `a < 1` and `b > 0` fixed, the rate of exploitation `(1 − a)/(b·l) − 1` tends to infinity (necessary labor vanishes like `l²`, surplus labor like `l`), while surplus labor per unit itself tends to zero.
 - `LeanEconomics/BeckerDeterrence.lean` — Becker's 1968 economic model of crime in its risk-neutral core: the expected net gain from an offense, `(1 − p)·g − p·f`, is strictly decreasing in the apprehension probability `p` and in the sanction `f` (severity bites only when `p > 0`); the offense condition `p·f < (1 − p)·g`; and in a finite population the number of offenders — Becker's supply of offenses — is nonincreasing in both `p` and `f`.
+- `LeanEconomics/BeckerOptimalFine.lean` — Becker's maximal-fine theorem: for a fixed deterrence target `p·f = D` with the fine bounded by the offender's wealth `W`, the cheapest policy is the corner `(D/W, W)` — maximal fine, minimal probability — because fines are transfers while enforcement cost rises with `p`; the corner policy is feasible exactly when `D ≤ W`, and with strictly increasing enforcement cost any interior fine is strictly more expensive.
 
 Discussion: the project was announced on the Lean community Zulip, in the Project announcements stream — [“Formalizing Marxian economics in Lean — first results”](https://leanprover.zulipchat.com/#narrow/channel/579630-Project-announcements/topic/Formalizing.20Marxian.20economics.20in.20Lean.20.E2.80.94.20first.20results). Feedback is welcome there.
 
